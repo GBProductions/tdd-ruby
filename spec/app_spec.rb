@@ -7,6 +7,11 @@ describe('Anagram#initialize') do
     expect(test.word).to(eq('hello'))
     end
   
+  it('initializes word2 class') do
+    test = Anagram.new('')
+    expect(test.word2).to(eq(''))
+    end
+  
   it('initializes alphabet class') do
     test = Anagram.new('')
     expect(test.alphabet).to(eq([/[abcdefghijklmnopqrstuvwxyz]/i]))
