@@ -5,4 +5,4 @@ class Anagram
     @word = word
     @alphabet = [/[abcdefghijklmnopqrstuvwxyz]/i]
   end
-
+end
