@@ -14,3 +14,7 @@ class Anagram
     @alphabet
   end
 end
+
+# puts 'Enter a new word'
+# input = gets.chomp
+# new_game = RPS.new(input)
