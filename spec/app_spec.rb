@@ -4,6 +4,6 @@ require('app')
 describe('Anagram#initialize') do
   it('initializes word class') do
     test = Anagram.new('hello')
-    expect(test.word).to(eq())
+    expect(test.word).to(eq('hello'))
     end
   end
