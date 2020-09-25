@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Anagrams and Antigrams_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Brief description of application}, September 25th 2020_
 
-#### By _**{List of contributors}**_
+#### By _**Garrett Brown**_
 
 ## Description
 
@@ -28,10 +28,13 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Tools utilized for project:_
+
+* Ruby
+* VS Code
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This is available under the MIT License. *
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_Garrett Brown_**
