@@ -2,6 +2,7 @@ class Anagram
   def initialize(word1, word2)
     @word1 = word1
     @word2 = word2
+    @alphabet = [/[abcdefghijklmnopqrstuvwxyz]/i]
   end
 
   def word1
