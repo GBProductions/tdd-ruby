@@ -14,7 +14,11 @@ class Anagram
   end
 
   def anagram
-	  #code goes here
+    word_array1 = @word.split('')
+    word_array1.each do |character|
+    word_array2 = @word.split('')
+    word_array2.each do |character|
+	  if character.match(@alphabet[0])
   end
 
   def antigram
