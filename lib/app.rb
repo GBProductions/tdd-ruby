@@ -8,3 +8,5 @@ puts 'Okay enter another word.'
 @word2 = gets
 @word2 =  word2.chomp
 puts 'Your words are ' + word1 + ' and ' + word2 + '.'
+
+changin stuff
