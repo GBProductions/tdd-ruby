@@ -1,10 +1,8 @@
 #!/usr/bin/env ruby
 
-puts 'welcome'
-Word1
+puts 'Welcome. We are checking if this program is an anagram or an antigram.'
+puts 'Enter a word.'
+word1 = gets 
+puts 'Okay enter another word.'
+word2 = gets
 
-not_word = (functions)
-
-If not word,
-Puts “String”
-Else if 
