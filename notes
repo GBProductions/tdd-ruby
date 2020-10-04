@@ -26,3 +26,19 @@ word_array.each do |character|
     expect(test.alphabet).to(eq([/[abcdefghijklmnopqrstuvwxyz]/i]))
     end
   end
+
+    it('initializes alphabet class') do
+    test = Anagram.new([/[abcdefghijklmnopqrstuvwxyz]/i])
+    expect(test.alphabet()).to(eq([/[abcdefghijklmnopqrstuvwxyz]/i]))
+    end
+  end
+
+    def alphabet
+    @alphabet
+  end
+
+      @alphabet = [/[abcdefghijklmnopqrstuvwxyz]/i]
+
+
+          word_array1 = @word1.split('')
+    word_array2 = @word2.split('')
