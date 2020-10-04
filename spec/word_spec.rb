@@ -14,7 +14,7 @@ describe('Anagram#initialize') do
 describe('Anagram#anagrams') do
   it('word1 will match word2') do
     test = Anagram.new('bury', 'ruby')
-    expect(test.anagrams).to(eq(word_array2))
+    expect(test.anagrams).to(eq("These words are anagrams!"))
     end
   end
 end

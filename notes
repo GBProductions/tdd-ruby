@@ -40,5 +40,3 @@ word_array.each do |character|
       @alphabet = [/[abcdefghijklmnopqrstuvwxyz]/i]
 
 
-          word_array1 = @word1.split('')
-    word_array2 = @word2.split('')
