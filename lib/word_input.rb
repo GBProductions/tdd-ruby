@@ -4,11 +4,19 @@ class Anagram
     @word2 = word2
   end
 
-  def word
+  def word1
     @word1
   end
 
-  def word
+  def word2
     @word2
+  end
+
+  def anagram
+	  #code goes here
+  end
+
+  def antigram
+    #code goes here
   end
 end

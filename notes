@@ -20,3 +20,9 @@ word_array.each do |character|
 # puts 'Enter a new word'
 # input = gets.chomp
 # new_game = RPS.new(input)
+
+  it('initializes alphabet class') do
+    test = Anagram.new('')
+    expect(test.alphabet).to(eq([/[abcdefghijklmnopqrstuvwxyz]/i]))
+    end
+  end
