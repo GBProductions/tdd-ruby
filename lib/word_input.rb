@@ -17,13 +17,14 @@ class Anagram
   end
 
   def anagrams
-    if @word1.eql?(@word2)
+    word1 = @word1.downcase!
+    word2 = @word2.downcase!
+    if word1.eql?(word2)
       return true
-
   end
 
-  def antigram
-    #code goes here
-  end
+  # def antigram
+  #   #code goes here
+  # end
 end
 end
