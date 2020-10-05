@@ -23,8 +23,8 @@ class Anagram
       return true
   end
 
-  # def antigram
-  #   #code goes here
-  # end
+  def antigrams
+    #code goes here
+  end
 end
 end
