@@ -36,7 +36,7 @@ word_array.each do |character|
     def alphabet
     @alphabet
   end
-
+    @alphabet = [/[abcdefghijklmnopqrstuvwxyz]/i]
       @alphabet = [/[abcdefghijklmnopqrstuvwxyz]/i]
 
   def anagrams
