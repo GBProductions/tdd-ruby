@@ -20,7 +20,7 @@ class Anagram
     word1 = @word1.downcase!
     word2 = @word2.downcase!
     if word1.eql?(word2)
-      return true
+      puts "These words are anagrams!"
   end
 end
 
