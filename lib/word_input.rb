@@ -17,13 +17,10 @@ class Anagram
   end
 
   def anagrams
-    word_array1 = @word1.split('')
-    word_array2 = @word2.split('')
-    word_array1.each do |character|
-      if character.str.eql?(word_array2)
-      return "These words are anagrams!"
+    if @word1.eql?(@word2)
+      return true
+
   end
-end
 
   def antigram
     #code goes here
