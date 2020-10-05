@@ -21,7 +21,7 @@ describe('Anagram#anagrams') do
 describe('Anagram#antigrams') do
 it('word1 will have no letters in common with word2') do
   test = Anagram.new('maybe', 'post')
-  expect(test.antigrams).to(eq(true))
+  expect(test.antigrams).to(eq(false))
   end
 end
 end

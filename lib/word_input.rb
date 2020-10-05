@@ -22,9 +22,13 @@ class Anagram
     if word1.eql?(word2)
       return true
   end
+end
 
   def antigrams
-    #code goes here
+    word1 = @word1.downcase!
+    word2 = @word2.downcase!
+    if (word1 != word2)
+      return false
   end
 end
 end
