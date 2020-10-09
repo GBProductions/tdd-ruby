@@ -12,6 +12,10 @@ class Anagram
     @word2
   end
 
+  def letters
+    @letters = /[A-Za-z]/
+  end 
+
   def anagrams
     word1 = @word1.downcase
     word2 = @word2.downcase
