@@ -12,13 +12,11 @@ class Anagram
     @word2
   end
 
-  def alphabet
-    @alphabet
-  end
-
   def anagrams
     word1 = @word1.downcase
     word2 = @word2.downcase
+    word1 = word1.chars.sort
+    word2 = word2.chars.sort
     if word1.eql?(word2)
       return true
     elsif word1 != word2
