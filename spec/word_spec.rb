@@ -17,12 +17,11 @@ describe('Anagram#anagrams') do
     expect(test.anagrams()).to(eq(true))
     end
   end
-end
-  # it('will account for words with different cases') do
-  #   test = Anagram.new('Ruby', 'Bury')
-  #   expect(test.anagrams()).to(eq(true))
-  #   end
-  # end
+  it('will account for words with different cases') do
+    test = Anagram.new('Ruby', 'Bury')
+    expect(test.anagrams()).to(eq(true))
+    end
+  end
 
 
 
