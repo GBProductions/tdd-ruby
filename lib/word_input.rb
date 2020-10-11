@@ -14,9 +14,10 @@ class Anagram
 
   def letters
     word1 = @word1
-    if word1 =~ /[abcdefghijklmnopqrstuvwxyz]/
+    word2 = @word2
+    if word1 =~ /[abcdefghijklmnopqrstuvwxyz]/ && word2 =~ /[abcdefghijklmnopqrstuvwxyz]/
       return true
-    elsif word1 != /[abcdefghijklmnopqrstuvwxyz]/
+    elsif word1 != /[abcdefghijklmnopqrstuvwxyz]/ || word2 =~ /[abcdefghijklmnopqrstuvwxyz]/
       return false
   end 
 end
@@ -36,8 +37,19 @@ end
   def antigrams
     word1 = @word1.downcase
     word2 = @word2.downcase
-    if (word1 != word2)
+    a = word1.chars.sort
+    b = word2.chars.sort
+    c = a.length
+    d = b.length
+
+    if ((a - b).length) != c && b
       return false
+    elsif ((a - b).length) === c && b
+      return true
+    # until chars (word1 != word2)
+    #   return true
+    # elsif word1.eql?(word2)
+    #   return false
   end
 end
 
