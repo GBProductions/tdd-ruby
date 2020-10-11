@@ -50,8 +50,8 @@ end
   end
 
   def program
-    if letters 
-      puts "Type in only letters please!" 
+    if letters == false
+      puts "Type in real words please!" 
     # elsif letters true
     #   puts "Your words are #{@word1} and #{@word2}!" 
     #   if anagrams
