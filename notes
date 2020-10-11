@@ -52,3 +52,16 @@ word_array.each do |character|
     word_array1.each do |character|
 
     puts 'Your words are ' + @word1 + ' and ' + @word2 + '.'
+
+
+
+
+
+    word1 = 'a car'.downcase.chars.sort
+    word2 = 'caar'.downcase.chars.sort
+    word1 = word1.strip
+    word2 = word2.strip
+
+
+    word1 = 'a car'.gsub(/ /, '')
+    word2 = 'caar'.gsub(/ /, '')

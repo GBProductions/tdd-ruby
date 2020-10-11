@@ -22,6 +22,11 @@ describe('Anagram#anagrams') do
     test = Anagram.new('Ruby', 'Bury')
     expect(test.anagrams()).to(eq(true))
     end
+
+  it('will comapre more than two words to possibly be anagrams') do
+    test = Anagram.new('a car', 'caar')
+    expect(test.anagrams()).to(eq(true))
+    end
   end
 
 describe('Anagram#letters') do
@@ -31,12 +36,9 @@ describe('Anagram#letters') do
     end
   end
 
-describe('Anagra#antigrams') do
+describe('Anagram#antigrams') do
   it('will compare two words to see if they are antigrams') do
     test = Anagram.new('hat', 'car')
     expect(test.antigrams()).to(eq(false))
     end
   end
-
-
-  # it('will comapre more than two words to possibly be anagrams or antigrams')
