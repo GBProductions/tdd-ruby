@@ -41,4 +41,8 @@ describe('Anagram#antigrams') do
     test = Anagram.new('hat', 'car')
     expect(test.antigrams()).to(eq(false))
     end
+  it('will comapre more than two words to possibly be antigrams') do
+    test = Anagram.new('bees', 'a car')
+    expect(test.antigrams()).to(eq(true))
+    end
   end

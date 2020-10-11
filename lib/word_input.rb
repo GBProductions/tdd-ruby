@@ -35,10 +35,10 @@ end
 end
 
   def antigrams
-    word1 = @word1.downcase
-    word2 = @word2.downcase
-    a = word1.chars.sort
-    b = word2.chars.sort
+    word1 = @word1.gsub(/ /, '')
+    word2 = @word2.gsub(/ /, '')
+    a = word1.downcase.chars.sort
+    b = word2.downcase.chars.sort
     c = a.length
     d = b.length
 
