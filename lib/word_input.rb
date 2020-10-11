@@ -15,9 +15,9 @@ class Anagram
   def letters
     word1 = @word1
     word2 = @word2
-    if word1 =~ /[a-z ]/ && word2 =~ /[a-z ]/
+    if word1 =~ /[aeiouy ]/ && word2 =~ /[aeiouy ]/
       return true
-    elsif word1 != /[a-z ]/ || word2 =~ /[a-z ]/
+    elsif word1 != /[aeiouy ]/ || word2 =~ /[aeiouy ]/
       return false
   end 
 end
@@ -46,19 +46,21 @@ end
       return true
     elsif ((a - b).length) != c && b
       return false
+    end
+  end
+
+  def program
+    if letters 
+      puts "Type in only letters please!" 
+    # elsif letters true
+    #   puts "Your words are #{@word1} and #{@word2}!" 
+    #   if anagrams
+    #     puts "#{@word1} and #{@word2} are both ANAGRAMS!!!"
+    #   elsif antigrams
+    #     puts "#{@word1}and #{@word2} are not anagrams but are ANTIGRAMS!!!"
+    #   else
+    #     puts "#{@word1} and #{@word2} are neither anagrams nor antigrams."
+    #   end
+    end
   end
 end
-
-  # def program
-  #   if letters false
-  #     puts "Type in only letters please!" 
-  #   elsif letters true
-  #     puts "Your words are #{@word1} and #{@word2}!" 
-  #     if anagrams
-  #       puts "#{@word1} and #{@word2} are both ANAGRAMS!!!"
-  #     elsif antigrams
-  #       puts "#{@word1}and #{@word2} are not anagrams but are ANTIGRAMS!!!"
-  #     else
-  #       puts "#{@word1} and #{@word2} are neither anagrams nor antigrams."
-  #     end
-  end

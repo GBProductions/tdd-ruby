@@ -7,5 +7,5 @@ puts 'Enter a word.'
 @word1 = gets.chomp
 puts 'Okay enter another word.'
 @word2 = gets.chomp
-puts 'Your words are ' + @word1 + ' and ' + @word2 + '.'
-
+new_query = Anagram.new(@word1, @word2)
+puts new_query.program()

@@ -31,7 +31,7 @@ describe('Anagram#anagrams') do
 
 describe('Anagram#letters') do
   it('will check if input is letters') do
-    test = Anagram.new('123', '456')
+    test = Anagram.new('ruby', 'sdfb')
     expect(test.letters()).to(eq(false))
     end
   end
