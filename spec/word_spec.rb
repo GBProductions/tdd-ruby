@@ -2,7 +2,7 @@ require('rspec')
 require('word_input')
 
 describe('Anagram#initialize') do
-  it('initializes Anagram class, word1') do
+  it('initializes Anagram class, word1 and word2') do
     test = Anagram.new('hello', 'ruby')
     expect(test.word1).to(eq('hello'))
     end
@@ -22,10 +22,12 @@ describe('Anagram#anagrams') do
     test = Anagram.new('Ruby', 'Bury')
     expect(test.anagrams()).to(eq(true))
     end
+  end
 
+describe('Anagram#letters') do
   it('will check if input is letters') do
     test = Anagram.new('123', '456')
-    expect(test.anagrams).to(eq(false))
+    expect(test.letters()).to(eq(false))
     end
   end
 

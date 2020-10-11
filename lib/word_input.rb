@@ -13,8 +13,13 @@ class Anagram
   end
 
   def letters
-    @letters = /[A-Za-z]/
+    word1 = @word1
+    if word1 =~ /[abcdefghijklmnopqrstuvwxyz]/
+      return true
+    elsif word1 != /[abcdefghijklmnopqrstuvwxyz]/
+      return false
   end 
+end
 
   def anagrams
     word1 = @word1.downcase
@@ -40,9 +45,8 @@ end
     #if words match up(anagrams) , return "These are anagrams."
     # elsif they don't, return "These are antigrams"
     #elsif they are neither, return "These are just words!"
+  end
 end
-end
-
 # if antigrams
 #   puts "#{input1} and #{input2} are not anagrams but are ANTIGRAMS!!!"
 # elsif anagrams
