@@ -40,7 +40,6 @@ end
     a = word1.downcase.chars.sort
     b = word2.downcase.chars.sort
     c = a.length
-    d = b.length
 
     if ((a - b).length) === c 
       return true
