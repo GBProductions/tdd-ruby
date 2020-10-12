@@ -42,9 +42,9 @@ end
     c = a.length
     d = b.length
 
-    if ((a - b).length) === c && b
+    if ((a - b).length) === c 
       return true
-    elsif ((a - b).length) != c && b
+    elsif ((a - b).length) != c 
       return false
     end
   end
@@ -52,15 +52,12 @@ end
   def program
     if letters == false
       puts "Type in real words please!" 
-    # elsif letters true
-    #   puts "Your words are #{@word1} and #{@word2}!" 
-    #   if anagrams
-    #     puts "#{@word1} and #{@word2} are both ANAGRAMS!!!"
-    #   elsif antigrams
-    #     puts "#{@word1}and #{@word2} are not anagrams but are ANTIGRAMS!!!"
-    #   else
-    #     puts "#{@word1} and #{@word2} are neither anagrams nor antigrams."
-    #   end
+    elsif anagrams == true
+      puts "#{@word1} and #{@word2} are both ANAGRAMS!" 
+    elsif antigrams == true
+      puts "#{@word1}and #{@word2} are not anagrams but they are ANTIGRAMS!"
+    elsif anagrams == false && antigrams == false
+      puts "#{@word1} and #{@word2} are neither anagrams nor antigrams."
     end
   end
 end
